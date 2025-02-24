@@ -614,6 +614,20 @@ video {
   max-width: 32rem;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;

@@ -34,6 +34,13 @@
             >
               QUERO CONHECER
             </a>
+            <a 
+              href="#"
+              id="modelos-disponiveis-btn"
+              class="font-bold bg-zinc-800 text-white py-2 px-5 border-2 border-zinc-800 hover:bg-white duration-300 hover:text-zinc-800"
+            >
+              MODELOS DISPONÍVEIS
+            </a>
           </div>
 
         </div>
@@ -45,6 +52,7 @@
         <img 
           src="assets/tenis.png" 
           alt="Tenis Nike Air"
+          id="tenis-img"
           class="max-w-lg w-11/12 md:w-full object-cover z-30 duration-300 hover:rotate-6 hover:scale-110 md:hover:scale-125"
         />
       </div>
@@ -52,5 +60,17 @@
     </main>
 
   </div>
+  <script>
+    document.getElementById('modelos-disponiveis-btn').addEventListener('click', function(event) {
+      event.preventDefault();
+      const tenisImg = document.getElementById('tenis-img');
+      if (tenisImg.src.includes('tenis.png')) {
+        tenisImg.src = 'assets/tenis-novo.png'; // Substitua pelo caminho da nova imagem
+      } else {
+        tenisImg.src = 'assets/tenis.png'; // Substitua pelo caminho da imagem original
+      }
+      tenisImg.classList.add('animate-fadeIn');
+    });
+  </script>
 </body>
 </html>

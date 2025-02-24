@@ -19,15 +19,19 @@ module.exports = {
             "0%": { opacity: 1 },
             "50%": { opacity: 0.2 },
             "100%": { opacity: 1 },
+          },
+          fadeIn: {
+            "0%": { opacity: 0 },
+            "100%": { opacity: 1 },
           }
         },
         animation:{
           floatRight: "floatRight 2.5s infinite",
-          opacityPulse: "opacityPulse 2.5s infinite"
+          opacityPulse: "opacityPulse 2.5s infinite",
+          fadeIn: "fadeIn 1s ease-in-out"
         }
       },
     },
     plugins: [],
   }
-  
-  
+
